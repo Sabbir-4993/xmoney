@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('frontend.index'); });
-Route::get('/how-it-works', function () { return view('frontend.works'); });
-Route::get('/about', function () { return view('frontend.about'); });
-Route::get('/blog', function () { return view('frontend.blog'); });
-Route::get('/contact', function () { return view('frontend.contact'); });
-Route::get('/tos', function () { return view('frontend.tos'); });
-Route::get('/privacy', function () { return view('frontend.privacy'); });
-Route::get('/faq', function () { return view('frontend.faq'); });
+Route::get('/', 'FrontPage\PagesController@index')->name('index');
+Route::get('/how-it-works', 'FrontPage\PagesController@works')->name('works');
+Route::get('/about', 'FrontPage\PagesController@about')->name('about');
+Route::get('/blog', 'FrontPage\PagesController@blog')->name('blog');
+Route::get('/contact', 'FrontPage\PagesController@contact')->name('contact');
+Route::get('/tos', 'FrontPage\PagesController@tos')->name('tos');
+Route::get('/privacy', 'FrontPage\PagesController@privacy')->name('privacy');
+Route::get('/faq', 'FrontPage\PagesController@faq')->name('faq');
 
 
 Auth::routes();
@@ -32,11 +32,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group([ 'as'=>'admin.', 'prefix'=>'admin', 'namespace' => 'Admin', 'middleware' => ['auth','admin'] ],
 function(){
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+    Route::resource('sell', 'SellController');
 });
 
 Route::group([ 'as'=>'user.', 'prefix'=>'user', 'namespace' => 'User', 'middleware' => ['auth','user'] ],
 function(){
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-    Route::get('transactions', function (){ return view('transactions'); });
+    Route::get('transactions', 'TransactionController@transaction')->name('transaction');
+    Route::get('profile', 'ProfileController@profile')->name('profile');
 });
 

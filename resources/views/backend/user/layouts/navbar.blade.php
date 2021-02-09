@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="{{ asset('frontend/assets/images/favicon.ico') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('frontend/assets/images/favicon.ico') }}" type="image/x-icon">
 
-    <title>Paylo - Send Money, Pay Online Worldwide HTML Template</title>
+    <title>Paylo - Send Money, Pay Online Worldwide</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset('frontend/assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -57,14 +57,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a class="nav-link" href="{{url('/')}}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/how-it-works')}}">How it works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/about')}}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('user.dashboard')}}">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('user.transaction')}}">Transactions</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{route('user.dashboard')}}">Dashboard</a></li>
-                            <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
-                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="{{route('user.profile')}}">Profile</a></li>
                             <li><a class="dropdown-item" href="notification.html">Notifications</a></li>
                             <li><a class="dropdown-item" href="send-money.html">Send Money</a></li>
                             <li><a class="dropdown-item" href="send-money-success.html">Send Money Success</a></li>
@@ -76,16 +74,17 @@
                             <li><a class="dropdown-item" href="fees.html">Transaction fees</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/blog')}}">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{url('/contact')}}">Contact</a></li>
                 </ul>
-{{--                <div class="header-btn justify-content-end">--}}
-{{--                    <a href="{{route('login')}}" class="bttn-small btn-fill">Login</a>--}}
-{{--                </div>--}}
-{{--                <br>--}}
-{{--                <div class="header-btn justify-content-end">--}}
-{{--                    <a href="{{route('register')}}" class="bttn-small btn-fill">Register</a>--}}
-{{--                </div>--}}
+                <div class="header-btn justify-content-end">
+                    <a href="{{ route('logout') }}" class="bttn-small btn-fill"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="mr-50" data-feather="power"></i> Logout
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                            {{ csrf_field() }}
+                        </form>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>

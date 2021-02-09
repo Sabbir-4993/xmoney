@@ -12,7 +12,6 @@
             <div class="row justify-content-center">
                 @yield('sidebar')
 
-                {{--Code--}}
                 <div class="col-xl-9 col-lg-9 col-md-12 mb-20">
                     <div class="transaction-list table-responsive">
                         <table class="table table-hover">
@@ -33,17 +32,23 @@
                                 <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
                                 <td><strong class="cl-primary">USD XXXX-2359</strong></td>
                             </tr>
-                            <tr data-toggle="modal" data-target="#exampleModalCenter">
-                                <td><span>13 March, 2020</span></td>
-                                <td><strong>Rahul payment</strong> <span>- Refund</span></td>
-                                <td><strong>- $589.9</strong></td>
-                                <td><i class="ti-close cl-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancelled"></i></td>
-                                <td><strong class="cl-primary">USD Bank of Rob</strong></td>
-                            </tr>
+
                             </tbody>
                         </table>
-                        <div class="centered mt-30">
-                            <a href="transactions.html" class="bttn-mid btn-fill">All Transactions</a>
+                        <div class="mt-20">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                         <!-- Transaction Details Modal -->
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

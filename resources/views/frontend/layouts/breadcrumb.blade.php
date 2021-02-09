@@ -104,3 +104,36 @@
         </div>
     </section><!--/breadcrumb area-->
 @endsection
+
+
+@section('login')
+    <!--breadcrumb area-->
+    <section class="breadcrumb-area gradient-overlay" style="background: url('{{asset('assets/images/banner/3.jpg')}}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="site-breadcrumb">
+                        <h2>Login Account</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/breadcrumb area-->
+@endsection
+
+@section('register')
+    <!--breadcrumb area-->
+    <section class="breadcrumb-area gradient-overlay" style="background: url('{{asset('assets/images/banner/3.jpg')}}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="site-breadcrumb">
+                        <h2>Register now</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/breadcrumb area-->
+@endsection

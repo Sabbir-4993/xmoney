@@ -5,14 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eef4dcc9-6a14-4638-8909-c3cf42facfe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SellController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontPage/PagesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/TransactionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Sell.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_073237_create_sells_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/admin/sell.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/user/layouts/partials/dashboard_top.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/user/layouts/partials/newsletter.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/user/layouts/partials/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/user/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/user/transaction.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/admin/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Backend/asset/app-assets/js/scripts/forms/form-repeater.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Backend/asset/app-assets/js/scripts/forms/form-repeater.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Backend/asset/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Backend/asset/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Backend/asset/app-assets/vendors/js/tables/datatable/pdfmake.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Backend/asset/app-assets/vendors/js/tables/datatable/pdfmake.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Backend/form-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Backend/form-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Backend/table-datatable-basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Backend/table-datatable-basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Frontend/Theme/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Frontend/Theme/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Frontend/Theme/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Frontend/Theme/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Frontend/Theme/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Frontend/Theme/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/admin/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/user/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/user/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/user/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/user/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/breadcrumb.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/breadcrumb.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +187,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -191,7 +218,12 @@
       <workItem from="1610217719254" duration="176000" />
       <workItem from="1610217937292" duration="1512000" />
       <workItem from="1610378394845" duration="9020000" />
-      <workItem from="1610532166441" duration="6666000" />
+      <workItem from="1610532166441" duration="7354000" />
+      <workItem from="1610594849963" duration="420000" />
+      <workItem from="1610595272605" duration="771000" />
+      <workItem from="1610618712284" duration="867000" />
+      <workItem from="1611215225527" duration="27000" />
+      <workItem from="1612841232982" duration="20554000" />
     </task>
     <servers />
   </component>
